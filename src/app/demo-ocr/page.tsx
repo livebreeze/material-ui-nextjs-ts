@@ -7,7 +7,7 @@ const OCRComponent = () => {
   const [text, setText] = useState("");
   const [image, setImage] = useState(null);
 
-  const handleImageChange = (event: { target: { files: any[] } }) => {
+  const handleImageChange = (event: any) => {
     const file = event.target.files[0];
     if (file) {
       // @ts-ignore
